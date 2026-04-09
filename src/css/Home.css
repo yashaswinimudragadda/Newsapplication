@@ -1,0 +1,67 @@
+.home {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Search Form Styling */
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+
+.search-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* News Grid Container */
+/* Note: You should wrap your NewsCards in a div with this class in Home.jsx */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+  }
+  
+  .home {
+    padding: 1rem;
+  }
+}

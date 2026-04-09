@@ -1,0 +1,78 @@
+/* Container padding and layout */
+.favorites {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Page Heading */
+.favorites-title {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Your grid class (Matched to your JSX typo 'new-grid').
+   This uses auto-fill to make sure the grid is responsive.
+*/
+.new-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Empty State Styling */
+.favorites-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh; /* Keeps it centered vertically in the main content area */
+  padding: 2rem;
+}
+
+.favorites-empty h2 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.favorites-empty p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Animation for when the page loads or items are filtered */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 768px) {
+  .favorites {
+    padding: 1rem;
+  }
+
+  .favorites-title {
+    font-size: 1.5rem;
+  }
+  
+  .new-grid {
+    gap: 1.5rem;
+    /* On small phones, show 1 card per row */
+    grid-template-columns: 1fr;
+  }
+}
