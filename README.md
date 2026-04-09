@@ -1,16 +1,35 @@
-# React + Vite
+# 📰 NewsHub - Modern News Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React-based news application that allows users to browse top headlines by category, search for specific topics, and save articles to their favorites. Built with a focus on clean UI/UX and efficient state management.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View the Live Site](https://yashaswinimudragadda.github.io/Newsapplication/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Built With
+* **React 18** - UI Library
+* **Vite** - Build Tool (Lightning-fast development)
+* **React Router Dom** - Navigation and routing
+* **Context API** - Global state management for news and favorites
+* **CSS3** - Custom styling with responsive layouts
+* **GNews API** (Recommended) - Real-time news data fetching
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Folder Structure
 
-## Expanding the ESLint configuration
+The project follows a modular structure to keep components and logic separated:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+News-portal/
+├── public/              # Static assets (favicon, etc.)
+├── src/
+│   ├── components/      # Reusable UI parts (NavBar, Card, CategoryBar)
+│   ├── contexts/        # Context API logic (NewsContext.jsx)
+│   ├── css/             # Component-specific and global styles
+│   ├── pages/           # Main views (Home.jsx, Favorites.jsx)
+│   ├── services/        # API call logic (api.js)
+│   ├── App.jsx          # Main application component & routes
+│   └── main.jsx         # Entry point (Router configuration)
+├── index.html           # Main HTML template
+├── package.json         # Project dependencies and scripts
+└── vite.config.js       # Vite configuration
