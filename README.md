@@ -4,6 +4,10 @@ A responsive React-based news application that allows users to browse top headli
 
 ## 🚀 Live Demo
 [View the Live Site](https://yashaswinimudragadda.github.io/Newsapplication/)
+* download the project into your local system
+* npm install
+* npm run dev
+* as in this project i used to localstorage which fails to load data on live site so we can fix it by adding mockdata to this project feel it as a  challenge hope you like it
 
 ## 🛠️ Built With
 * **React 18** - UI Library
